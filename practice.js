@@ -121,18 +121,18 @@ Instead, console.log your whole backPack object and then check out the console. 
 
   //Code Here
   var album = {
-    song1: "3:30",
-    song2: "2:20",
-    song3: "5:35",
-    song4: "4:04",
-    song5: "6:03"
+    welcomeHome: "3:30",
+    oneOfTheWorst: "2:20",
+    oneOfTheBest: "5:35",
+    seeYouLater: "4:04",
+    neverAgain: "6:03"
   };
 
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
   for(key in album) {
-    alert(key + album[" key"]);
+    alert(key);
   }
 
 
@@ -146,10 +146,23 @@ Instead, console.log your whole backPack object and then check out the console. 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   //Code Here
+  var states = {
+    Virginia: 9000000,
+    Washington: 21000,
+    Oregon: 67,
+    Maine: 33333,
+    Nevada: 1
+  };
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
+  for(key in states) {
+    if(states[key] > 30000) {
+      alert(key);
+    }
+  }
+
 
 
 
@@ -171,10 +184,18 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
+  for(key in user1) {
+    if(!user1[key])
+      delete user1[key];
+  }
+
 
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
+  user1.name = "Anthony";
+  user1.username = "anthonymontoya1337";
+
 
 
 
@@ -199,10 +220,13 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
+  user2.name = "Tyler S. McGinnis";
+  user2.email = "tyler.mcginnis@devmounta.in";
 
 //Now call the sayEmail method that's on the user object which will alert the users email
 
   //Code Here
+  sayEmail();
 
 
 
