@@ -43,7 +43,6 @@ var me = {
   //Code here
   favoriteThings.food = "Chicken Nuggets";
   favoriteThings.book = "Harry Potter";
-  console.log(favoriteThings);
 
 
 
@@ -61,16 +60,26 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+  var backPack = {
+
+  };
+
+  var item = "firstPocket";
+  backPack["firstPocket"] = "chapstick";
+  backPack.color = "blue and white";
+
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
+  alert(backPack);
 
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
   //Code here
+  console.log(backPack);
 
 
 
@@ -83,10 +92,22 @@ Instead, console.log your whole backPack object and then check out the console. 
 //Create an 'alsoMe' object with the following properties name, age, height, gender, married, eyeColor, hairColor. Fill those properties in with the appropriate values.
 
   //Code Here
+  var alsoMe = {
+    name: "Anthony",
+    age: 23,
+    height: "6ft",
+    gender: "Male",
+    married: false,
+    eyeColor: "Brown",
+    hairColor: "Dark Brown"
+  };
 
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
+  for(key in alsoMe) {
+      alert(key + " --> " + alsoMe[key]);
+  }
 
 
 
@@ -99,10 +120,20 @@ Instead, console.log your whole backPack object and then check out the console. 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
   //Code Here
+  var album = {
+    song1: "3:30",
+    song2: "2:20",
+    song3: "5:35",
+    song4: "4:04",
+    song5: "6:03"
+  };
 
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
+  for(key in album) {
+    alert(key + album[" key"]);
+  }
 
 
 
